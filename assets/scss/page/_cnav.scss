@@ -1,0 +1,47 @@
+.cnav {
+  padding: 2rem;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-item {
+    width: 22%;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.1);
+
+    a {
+      display: block;
+      padding-top: 10px;
+    }
+  }
+
+  &-imgframe {
+    width: 100%;
+    height: auto;
+    padding-top: 56.25%;
+    background: url(/assets/img/top/chanpon-icon.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &-textbox {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px 10px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  &-titletext {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 125%;
+  }
+
+  &-overviewtext {
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+}
