@@ -639,9 +639,28 @@ span {
 }
 
 .sec-h2 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.sec-h2_center {
   text-align: center;
+}
+
+.sec-h2_border::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
 }
 
 .sec-text {
@@ -681,5 +700,10 @@ span {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
+}
+
+.sec-h2sub {
+  font-weight: 600;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.min.css.map */
